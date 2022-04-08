@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1 - Bio page - JGiesing</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        h1{
+            color:darkblue;
+        }
+
+        h2{
+            color:crimson;
+        }
+
+        #controller{
+            height: 300px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Joseph Giesing </h1>
+    </div>
+
+    <hr>
+
+    <div id="nav">
+        <a href="#" id="bio-link">BIO</a>
+        <a href="#" id="ed-link">EDUCATION</a>
+        <a href="#" id="hobbies-link">HOBBIES</a>
+    </div>
+
+    <hr>
+
+    <div id="main">
+
+        <div id="bio">
+            <h2><b>Bio</b></h2>
+            <img src="images/nosto.jpg" alt="picture of north stonington town sign">
+            <p> I was born on November 12, 2000 in New London, Connecticut, and I grew up in North Stonington, Connecticut. When I has young I enjoyed playing with legos and playing Mario and Duck Hunter on the NES, which was my introduction to video games. Once i started going to school I began playing rec league sports, like baseball, basketball, and soccer, until I got bored of them around middle shool. Around this time I got an xbox 360 and started playing games again more and I was hooked. This eventually led to me becoming interested with code and learning a little bit early on, which led me to the career path that I chose.
+            <br>
+            <br>
+            Eventually I got to highschool and joined the school cross country team, history club, and other activities. During this time I stopped coding until senior year when I had a computer science class where we learned python. It was my first time using python but it reminded me of how much I enjoyed messing with code and seeing how things worked on the back end. At the time I was unsure of what I wanted to do for my future career and education, but that class put me on the path to New England Tech. Today I am working toward my bachelors degree in software engineering.  
+            </p>
+            <hr>
+        </div>
+
+        <div id="ed" class="hide">
+            <h2><b>Schooling</b></h2>
+            <ul>
+                <li>Wheeler Middle School</li>
+                <li><a href="http://www.northstonington.k12.ct.us/schools/wheeler-high-school/">Wheeler High School</a></li>
+                <li>New England Institute of Technology</li>
+            </ul>
+            <hr>
+        </div>
+
+        <div id="hobbies" class="hide">
+            <h2><b>Hobbies</b></h2>
+            <ol>
+                <li>Watching shows and movies</li>
+                <li>Reading</li>
+                <li>Gaming</li>
+            </ol>
+            <img src="images/controller.jpg" alt="picture of gaming controller" id="controller">
+            <hr>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="footer">
+        @2022 Joseph Giesing | W1 Assignment
+    </div>
+    
+    <script>
+        var a = document.querySelectorAll('a')
+        //div
+        var bio = document.querySelector('#bio')
+        var ed = document.querySelector('#ed')
+        var hobbies = document.querySelector('#hobbies')
+        //links
+        var lbio = document.querySelector('#bio-link')
+        var led = document.querySelector('#ed-link')
+        var lhobbies = document.querySelector('#hobbies-link')
+
+        lbio.addEventListener('click', showBio)
+        function showBio(e)
+        {
+            e.preventDefault()
+            bio.classList.remove('hide')
+            ed.classList.add('hide')
+            hobbies.classList.add('hide')
+            
+        }
+
+        led.addEventListener('click', showEd)
+        function showEd(e)
+        {
+            e.preventDefault()
+            bio.classList.add('hide')
+            ed.classList.remove('hide')
+            hobbies.classList.add('hide')
+            
+        }
+
+        lhobbies.addEventListener('click', showHobbies)
+        function showHobbies(e)
+        {
+            e.preventDefault()
+            bio.classList.add('hide')
+            ed.classList.add('hide')
+            hobbies.classList.remove('hide')
+            
+        }
+    </script>
+</body>
+</html>
