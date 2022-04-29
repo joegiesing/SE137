@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Syncopate:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-image: url(images/wallpapersden.com_77021-5120x2880.jpg);
+    margin: 0;
+    height: 100%;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+    padding: 14px;
+    display: grid;
+    grid-template-areas: 'hed hed hed hed hed'
+                         'sec sec sec sec sec'
+                         'fot fot fot fot fot';
+    grid-template-rows: 80px auto 50px;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1em;
+}
+
+h1{
+    color: orange;
+    font-size: 40px;
+    font-family: 'Asap', sans-serif;
+    margin-top: 15px;
+
+}
+
+h3{
+    color: orange;
+    margin-top: -10px;
+}
+
+header{
+    grid-area: hed;
+    /*background-color: rgb(133, 131, 134);*/
+    background-color: rgba(156, 156, 156, 0.850);
+    max-height: 100px;
+    padding-left: 40px;
+    border: 2.5px solid rgb(255, 145, 0);
+}
+
+section{
+    width: 100%;
+    background-color: rgba(61, 61, 61, 0.788);
+    padding: 20px;
+    grid-area: sec;
+    display: grid;
+    grid-template-areas: 'bio bio bio bio bio'
+                         'hob hob hob edu edu';
+    grid-template-columns: auto auto auto 20% 20%;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1.5em;
+}
+
+footer{
+    grid-area: fot;
+    color: orange;
+    font-size: 25px;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    background-color: rgba(156, 156, 156, 0.825);
+    max-height: 100px;
+    padding-top: 10px;
+    border: 2.5px solid rgb(255, 145, 0);
+}
+
+.bio{
+    grid-area: bio;
+    display: grid;
+    grid-template-areas: 'h-3 non non img'
+                         'txt txt txt img'
+                         'txt txt txt img';
+    grid-template-columns: auto auto auto 20%;
+    grid-template-rows: 10% auto;
+    grid-row-gap: .5em;
+    grid-column-gap: .5em;
+    background-color: gray;
+    font-size: 20px;
+    min-height: 350px;
+    max-height: 350px;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.bio h3{
+    grid-area: h-3;
+    font-size: 30px;
+}
+
+.bio p{
+    grid-area: txt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bio img{
+    grid-area: img;
+    width: 250px;
+    padding-top: 65px;
+}
+
+.edu{
+    grid-area: edu;
+    background-color: grey;
+    font-size: 30px;
+    min-height: 200px;
+    max-height: 250px;
+    padding: 15px;
+}
+
+.edu li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hob{
+    grid-area: hob;
+    background-color: grey;
+    font-size: 30px;
+    padding: 15px;
+    max-height: 250px;
+}
+
+.hob li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hob img{
+    width: 225px;
+    margin-top: -200px;
+    margin-bottom: 40px;
+    margin-left: 63%
+}
