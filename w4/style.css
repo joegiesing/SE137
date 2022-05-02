@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    height: 1080px;
+    width: 1820px;
+}
+
+body{
+    /* height: 1080px;
+    width: 1820px; */
+    margin: auto;
+}
+
+
+
+
+
+
+#content{
+    display: contents;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'ban ban ban ban ccl'
+                         'dvd dvd pen pen ccl'
+                         'fot fot fot fot fot';
+    grid-template-columns: 356px 344px 340px 340px 360px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background-color: #282828;
+}
+
+/*VVV------------vvv-HEADER-vvv------------VVV*/
+header{
+    height: 100px;
+    background-color: #070707;
+}
+
+header h1{
+    float: left;
+    color: #BB0908;
+    font-size: 48px;
+    font-family:'Teko', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 41px;
+}
+
+.icons{
+    height: 60px;
+    width: 60px;
+    margin-right: 13px;
+    margin-top: 17px;
+}
+
+#icontwt{
+    height: 69px;
+    width: 69px;
+    margin-top: 13px;
+}
+
+/*^^^------------^^^-HEADER-^^^------------^^^*/
+
+.banner{
+    grid-area: ban;
+    margin-bottom: -4px;
+}
+
+/*VVV------------vvv-DVD-vvv------------VVV*/
+.dvd{
+    grid-area: dvd;
+    display: flex;
+    border-top: 5px solid #BB0908;
+    background-color: #393939;
+    margin-left: 20px;
+}
+
+#dvdimg{
+    margin: 0 18px -2px 3px;
+}
+
+#dvdright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 18px;
+}
+
+.dvd h3{
+    color: #FF1D29;
+    font-size: 30px;
+    font-family:'Rock Salt', cursive;
+    font-weight: 400;
+
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#dvdp{
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-top: 4px solid #BB0908;
+    line-height: 27px;
+
+    padding-top: 20px;
+}
+
+#dvdbtm{
+    display: flex;
+    flex-direction: row;
+}
+
+#dvd{
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+#amzn{
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.dvd a{
+    color: teal;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.dvd #price{
+    color: white;
+    font-size: 72px;
+    font-family:'Teko', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-decoration: underline;
+
+
+    margin-top: 25px;
+}
+/*^^^------------^^^-DVD-^^^------------^^^*/
+
+/*VVV------------vvv-PENNANT-vvv------------VVV*/
+.pennant{
+    grid-area: pen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid #BB0908;
+    background-color: #393939;
+}
+
+.pennant img{
+    margin-top: 20px;
+}
+
+.pennant p{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 25px;
+}
+/*^^^------------^^^-PENNANT-^^^------------^^^*/
+
+/*VVV------------vvv-ASIDE-vvv------------VVV*/
+.aside{
+    grid-area: ccl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393939;
+    margin-bottom: -20px;
+}
+
+#sign{
+    margin-top: 25px;
+}
+
+.aside p{
+    width: 275px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.5px;
+    margin-top: 30px;
+}
+
+.aside span{
+    color: #FF1D29;
+}
+
+#jason{
+    margin-top: 27px;
+}
+/*^^^------------^^^-ASIDE-^^^------------^^^*/
+
+/*VVV------------vvv-FOOTER-vvv------------VVV*/
+footer{
+    grid-area: fot;
+    height: 60px;
+    background-color: #070707;
+}
+
+footer p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    margin: 20px auto;
+    margin-left: 30px;
+}
+/*^^^------------^^^FOOTER-^^^------------^^^*/
+
+
+
+/*--------------------------
+----------IMAGES------------
+----------------------------*/
+
+#banner{
+    height: 388px;
+    width: 1440px;
+}
+
+#poster{
+    height: 478px;
+    width: 310px;
+}
+
+#dvd{
+    height: 148px;
+    width: 117px;
+}
+
+#pennant{
+    height: 229px;
+    width: 641px;
+}
+
+#sign{
+    height: 254px;
+    width: 325px;
+}
+
+#jason{
+    height: 170.52px;
+    width: 325px;
+}
+
