@@ -1,0 +1,303 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -------------------VVV---Header---VVV----------------------- */
+header{
+    background-color: #505050;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 15px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+#util{
+    margin-left: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 15px;
+    word-spacing: 15px;
+}
+
+#cog{
+    margin-right: 5px;
+    margin-top: -2px;
+    background: url(images/sprites.png) no-repeat -433px -190px;
+	width: 12px;
+	height: 12px;
+    zoom: 1;
+}
+
+#cog:hover{
+    background: url(images/sprites.png) no-repeat -433px -1px;
+}
+/* -------------------^^^---Header---^^^----------------------- */
+
+
+section{
+    height: 100%;
+    background-color: #373737;
+    display: flex;
+}
+
+
+/* -------------------VVV---Aside---VVV----------------------- */
+aside{
+    min-width: 45px;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #tray{
+        display: inline-block;
+        zoom: 2;
+        background: url(images/sprites.png) no-repeat -169px -214px;
+	    width: 12px;
+	    height: 12px;
+        margin-top: 9px;
+    }
+
+    #tray:hover{
+        background: url(images/sprites.png) -169px -25px no-repeat;
+    }
+
+    #tiles{
+        display: inline-block;
+        zoom: 2;
+        background: url(images/sprites.png) no-repeat -217px -191px;
+	    width: 11px;
+	    height: 11px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #tiles:hover{
+        background: url(images/sprites.png) no-repeat -217px -2px;
+    }
+
+    #trash{
+        display: inline-block;
+        zoom: 2;
+        background: url(images/sprites.png) no-repeat -458px -189px;
+	    width: 11px;
+	    height: 13px;
+        margin-top: auto;
+        margin-bottom: 5px;
+    }
+
+    #trash:hover{
+        background: url(images/sprites.png) no-repeat -458px 0;
+    }
+/* -------------------^^^---Aside---^^^----------------------- */
+
+
+/* -------------------VVV---Navigation---VVV----------------------- */
+nav{
+    min-width: 145px;
+    width: 144px;
+    background-color: #373737;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+
+details{
+    /* margin: 5px; */
+    margin-left: 5px;
+    width: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+summary{
+    border-top: solid #7B7575 1px;
+    border-bottom: solid #7B7575 1px;
+    width: 134px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+#files{
+    list-style-type: none;
+    list-style-image: url(images/paper.png);
+    margin-bottom: 30px;
+}
+
+.files{
+    margin-bottom: 5px;
+}
+
+#stuff{
+    list-style-type: none;
+    list-style-image: url(images/fire.png);
+}
+
+.stuff{
+    margin-bottom: 5px;
+}
+/* -------------------^^^---Navigation---^^^----------------------- */
+
+
+/* -------------------VVV---Content----VVV------------------------- */
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    #tabs{
+        background-color: black;
+
+    }
+
+        #tabs a{
+            box-sizing: border-box;
+            height: 34px;
+            width: 173px;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .icon{
+            display: inline-block;
+            background: url(images/sprites.png) no-repeat -170px -310px;
+	        width: 11px;
+	        height: 12px;
+            margin-right: 10px;
+            margin-top: 1px;
+        }
+
+        .x{
+            float: right;
+            background: url('images/sprites.png') no-repeat -314px -191px;
+            width: 10px;
+            height: 10px;
+            margin-top: 2px;
+        }
+
+        #tabs a:link, #tabs a:visited{
+            background-color: #373737;
+        }
+
+        #tabs a:hover, #tabs a:active{
+            /* background-color: rgb(101, 105, 97); */
+            background-color: #161616;
+        }
+
+    #breadcrumbs{
+        background-color: #161616;
+    }
+
+    #breadcrumbs div{
+        margin-left: 10px;
+    }
+
+    #breadcrumbs a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        color: #0058A9;
+    }
+
+    #breadcrumbs span{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        color: white;
+        text-decoration-line: none;
+    }
+
+    textarea{
+        resize: none;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+    }
+/* -------------------^^^---Content----^^^------------------------- */
+
+
+/* -------------------VVV---Footer----VVV------------------------- */
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    background-color: #0254A0;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-top: solid #ffffff 1px;
+}
+
+footer div{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+#wifi{
+    display: inline-block;
+    background: url(images/sprites.png) no-repeat -410px -190px;
+	width: 11px;
+	height: 12px;
+}
+/* -------------------^^^---Footer----^^^------------------------- */
+
+
+.hidden{
+    min-width: 0;
+    width: 0;
+    padding: 0;
+    transition: all 1s;
+}
