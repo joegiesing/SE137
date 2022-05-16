@@ -19,6 +19,6 @@ for(let i=0; i < tabs.length; i++)
             tabs[i].getElementsByClassName.backgroundcolor = 'orange';
         }
         e.target.style.backgroundcolor = '#161616'
-        document.querySelectorAll('#breadcrumbs a')[3].innerHTML = e.target.innerHTML
+        document.querySelectorAll('#breadcrumbs a')[3].innerHTML = e.target.innerText
     });
 }
