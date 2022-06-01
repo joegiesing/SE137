@@ -1,0 +1,38 @@
+@charset "UTF-18";
+
+html, body{
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: lightgray !important;
+}
+
+.imagediv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxx{
+
+    border: 2px solid rgba(255, 0, 0, 0.137);
+    background-color: lightgray;
+}
