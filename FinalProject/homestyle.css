@@ -1,0 +1,113 @@
+@charset "UTF-18";
+
+@media (max-width: 1920px)
+{
+    .contact-images{
+        height: 80px;
+        width: 80px;
+    }
+
+    .row .col-sm{
+        margin-bottom: 10px;
+    }
+
+    .row .col-sm-3{
+        margin-bottom: 10px;
+    }
+    
+    .contact-col{
+        margin-top: 80px;
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    .contact-images{
+        height: 60px;
+        width: 60px;
+    }
+
+    .row .col-sm{
+        margin-bottom: 50px;
+    }
+
+    .row .col-sm-3{
+        margin-bottom: 50px;
+    }
+
+    .contact-col{
+        margin-top: 0px;
+    }
+}
+
+/*------------VVV---Main---VVV------------*/
+main{
+    padding: 28px 50px;
+}
+
+.img-fluid{
+    margin-bottom: 45px;
+    min-height: 250px;
+    border: solid black 1px;
+    box-shadow: 4px 4px darkgray;
+}
+
+
+        /*------------VVV---Grid---VVV------------*/
+
+.col-inside{
+    padding-left:25px;
+}
+
+.row .col-sm{
+    padding: 0 20px;
+}
+
+.row .col-sm-3{
+    padding: 0 20px;
+}
+
+.row h1{
+    color: #0144A9;
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    border-bottom: solid black 1px;
+    margin-bottom: 25px;
+}
+
+.row p{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.date-span{
+    color: grey;
+}
+
+.featured-link{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.github-link
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.contact-images{
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+        /*------------^^^---Grid---^^^------------*/
+
+
+/*------------^^^---Main---^^^------------*/

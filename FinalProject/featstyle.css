@@ -1,0 +1,91 @@
+@charset "UTF-18";
+
+@media (max-width: 1920px)
+{
+    .feat-info{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .feat-info{
+        margin-top: 30px;
+    }
+}
+
+/*------------VVV---Main---VVV------------*/
+
+main{
+    padding: 15px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    color: #0144A9;
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.row .feat-img{
+    padding: 0 20px;
+}
+
+/* .row .col-sm-3{
+    padding: 0 20px;
+} */
+
+.ratio-16x9{
+    max-width: 100%;
+    max-height: 100%;
+    border: solid black 1px;
+    box-shadow: 4px 4px darkgray;
+}
+
+.feat-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+    justify-content: space-between;
+    /* min-width: 155px; */
+}
+
+.feat-info p:first-child{
+    color: #0144A9;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    border-bottom: solid black 1px;
+}
+
+.date-span{
+    color: grey;
+}
+
+.feat-desc{
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.featured-link{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.github-link
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/*------------^^^---Main---^^^------------*/
